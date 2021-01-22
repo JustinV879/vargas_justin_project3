@@ -5,8 +5,10 @@ while (true) {
         light.setAll(light.rgb(250, 250, 250))
     }
     
-    if (input.soundLevel() >= 1) {
+    if (input.soundLevel() > 40) {
         light.setAll(light.rgb(250, 250, 250))
+    } else {
+        light.clear()
     }
     
 }
